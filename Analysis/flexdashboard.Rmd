@@ -1,0 +1,554 @@
+---
+title: "Analysis report for criminal incidents in Victoria"
+output: 
+  flexdashboard::flex_dashboard:
+        storyboard: true
+        vertical_layout: scroll
+        orientation: rows
+        source_code: embed
+---
+
+```{r setup, include=FALSE}
+library(flexdashboard)
+library(tidyverse)
+library(readxl)
+library(haven)
+library(ggplot2)
+library(kableExtra)
+library(ggResidpanel)
+library(bookdown)
+library(plotly)
+library(here)
+library(dplyr)
+library(naniar)
+library(tidytext)
+library(knitr)
+```
+
+Introduction {data-icon="fa-address-book"}
+===================================== 
+
+```{r , fig.align ="center"}
+include_graphics("police.jpeg") 
+```
+
+Row
+----
+### **Data Description**
+
+The [data](https://www.crimestatistics.vic.gov.au/crime-statistics/latest-victorian-crime-data/download-data-0) used for the analysis records the criminal incidents in Victoria from **December,2011** to **December,2020**.  It is collected from the [Crime Statistics Agency](https://www.crimestatistics.vic.gov.au/about-us/contact-us) of Victoria Government. The copyright is under the [CC-BY 4.0 license](https://creativecommons.org/licenses/by/4.0/), which allows the team to apply the data analysis with minimum restrictions on the use of the data.
+
+The ***purpose of this analysis report*** is to assist the policy maker to adjust or re-assign the police resources, possibly providing some insights on the future development on the social security.
+
+In the data analysis, it contains three main parts:
+
+*  To obtain an overview of the criminal incidents among Victoria's **police regions**. Also, observing the changes of incidents recorded over time to seek some trend or pattern in different local government areas.
+
+   *  Which police region has the greatest number of incidents recorded? 
+   *  How did the trend of incidents recorded in those police regions varied across the years?
+   *  What is the trend of incidents recorded in North West Metro's local government areas changes over time? 
+
+*  To understand the criminal activity better, it will not only show the record changes over time but also the changes of offense sub-groups and sub-divisions. This will provide a precise landscape of criminal activities in Victoria.
+
+   *  For each LGA, which offense_subdivision, recorded maximum incidents? 
+   *  For each LGA, Which offense_subgroup was most recorded in the previous found offense_subdivision's?
+   *  What was the trend of each offense_subgroup found over the years? 
+
+*  Building on the previous analysis, this part will explore the dissect of criminal activities among different **suburbs** or **towns** in Victoria.
+
+   *  What are the top 10 Suburbs with maximum no of incidents so far? 
+   *  What are the top 10 Suburb's recorded with most number of incidents in each Year? 
+   *  What were the top 10 Offense's in each year? 
+   *  What are the top 2 Offenses for the most affected Suburb's found in figure \@ref(fig:Q1)?
+   *  What is the trend of top 2 offenses in each year w.r.t most affected Suburb? 
+   
+Row
+-----
+
+***
+
+**Presentation TEAM**
+
+|Name	          |Email Id	                  |Student Id|
+|---------------|:-------------------------:|----------|
+|Karan Garg     |kgar0017@student.monash.edu|32106580  |
+|Jiaying Zhang  |jzha0342@student.monash.edu|30930685  |
+|Ziyao Wang     |zwan0008@student.monash.edu|27925315  |
+
+ 
+***
+
+
+
+Police region Analysis {data-icon="fa-github"}
+===================================== 
+```{r cleandata, include=FALSE}
+dat <- read_excel(here::here("data/Data_Tables_LGA_Criminal_Incidents_Year_Ending_December_2020.xlsx"), sheet=2)
+dat <- dat %>% 
+  select(c(Year, `Police Region`, `Local Government Area`, `Incidents Recorded`)) 
+```
+```{r readdata, include=FALSE}
+dat1 <- read.csv(here::here("data/LGA_Criminal_data2020.csv"))
+```
+
+Row {data-width=1000}
+------
+### Table 1 - To observe the total number of incidents recorded for each police region
+    
+```{r table1, message=FALSE}
+dat_tot <- dat1 %>% 
+  filter(`Local.Government.Area` == "Total") %>% 
+  group_by(`Police.Region`) %>% 
+  summarise(Total_Incidents = sum(`Incidents.Recorded`)) %>% 
+  arrange(-Total_Incidents)
+table1 <- dat_tot %>% 
+  knitr::kable(caption = "Number of Incidents Recorded in different Police Region", align = 'c') %>% 
+  kable_styling(bootstrap_options = c("striped", "hover","basic"))
+table1
+```
+
+
+**Observations**
+
+**North West Metro** police region has recorded maximum incidents during the period.
+
+Row {.tabset data-width=1000}
+-------------------------------------
+
+### Chart 2 - Incidents reocrded by different police region over time.
+
+```{r total,fig.cap = "Total number of incidents recorded in each police region", fig.height=8, fig.align='center',fig.width=10}
+dat_var <- dat1 %>% 
+  filter(`Local.Government.Area` == "Total") %>% 
+  group_by(Year, `Police.Region`) %>% 
+  summarise(Total_Incidents = sum(`Incidents.Recorded`))
+figure1 <- ggplot(dat_var, aes(x= Year,
+                               y = Total_Incidents,   
+                               color = `Police.Region`))+
+  geom_line() +
+  geom_point() +
+  scale_x_continuous(breaks=seq(2011,2020,2)) +
+  theme_bw()+
+  facet_wrap(~ `Police.Region`, scales = "free",ncol=2)+
+  scale_fill_brewer(palette = "Dark2")
+ggplotly(figure1)
+```
+
+
+### Chart 3 - Crimial activity in North West Metro area.
+
+```{r north, fig.cap = "Crimial activity trend in different suburbs from North West Metro", fig.align='center', fig.height=11,fig.width=10}
+dat_North <- dat1 %>% 
+  filter(Police.Region == "1 North West Metro") %>% 
+  select(-X)
+trend <- dat_North %>% 
+  group_by(Local.Government.Area, Year) %>% 
+  summarise(Total_Incidents = sum(`Incidents.Recorded`)) %>% 
+  arrange(-Total_Incidents) %>% 
+  filter(Local.Government.Area %in% c("Melbourne", 
+                                      "Hume", 
+                                      "Brimbank", 
+                                      "Wyndham", 
+                                      "Whittlesea", 
+                                      "Moreland",
+                                      "Banyule",
+                                      "Darebin",
+                                      "Hobsons Bay",
+                                      "Maribyrnong",
+                                      "Melton",
+                                      "Moonee Valley",
+                                      "Nillumbik",
+                                      "Yarra"))
+figure2 <- ggplot(trend, aes(x= Year, 
+                             y = Total_Incidents,
+                             color = Local.Government.Area))+
+  geom_line()+
+  geom_point() +
+  scale_x_continuous(breaks=seq(2011,2020,2)) +
+  facet_wrap(~ `Local.Government.Area`, scales = "free",ncol=2)+
+  scale_fill_brewer(palette = "Dark2")+
+  theme_bw()
+ggplotly(figure2)
+```
+
+Row {data.width = 600}
+--------------------------------
+
+**Observations  from Chart 2**
+
+- In the four main police regions of Victoria, it illustrates an evident fact that the number of incidents recorded has reached the *peak around early 2016*, then has a sudden pungle afterward.
+
+- The possible reason behind may be that the large decrease on the number of burglary and theft from 2016 to 2017, according to the report from [Victoria crime statistics](https://www.crimestatistics.vic.gov.au/crime-statistics/latest-victorian-crime-data/victim-reports-2).
+
+  * Additionally, this report states that the number of deception cases is in a continuous increase, which may due to the convenience of technology of e-mail, mobile phones and the internet. Thus, it may highlight some areas for re-enforcement in the future, such as cyber security and private data privacy.
+
+**Observations from Chart 3**
+
+- A tendency that the number of incidents recorded is increasing **since 2019**. This can provide some suggestions to the government in terms of adjusting the public safety policy and assigning the police resources. 
+
+ - Yet, **few exceptions** such as Hobsons Bay, Moonee Valley and Banyule, the reason maybe they are not the major resident area hence fewer criminal activities occurrence.
+
+Crime-type Analysis {data-icon="fa-github-alt"}
+===================================== 
+---
+### The definition of some concepts to be used
+
+```{r , fig.align ="center"}
+defin<-data.frame(grade=c("Broadest level","Intermediate level","Finest level"), 
+                            Area=c("Region","Police Service Area", "Local Government Areas"),                            Crime=c("Divisions","Subdivisions","Groups"))%>%
+knitr::kable(caption="Definition for some concept",booktabs = TRUE) %>%
+kable_styling(bootstrap_options = c("striped", "hover"))
+defin
+```
+
+
+
+```{r read-data, include=FALSE}
+criminaldata <- read_excel(here::here("data/Data_Tables_LGA_Criminal_Incidents_Year_Ending_December_2020.xlsx"), sheet = 4)
+```
+```{r datacleaning, include=FALSE}
+criminaluse <- criminaldata %>% 
+  select(Year,
+         `Local Government Area`,
+         `Offence Subdivision`,
+         `Incidents Recorded`)
+```
+
+### Which offence_subdivision, recorded maximum incidents in each LGA
+Row {.tabset data-width=1000}
+-------------------------------------
+### Chart1 
+```{r vis1, fig.width=9,fig.height=12}
+  criminalfinal<- criminaluse %>% 
+    mutate(lgth = str_length(`Offence Subdivision`)) %>% 
+  mutate(`Offence Subdivision` = substr(`Offence Subdivision`,start = 5,stop = lgth)) %>% 
+  mutate(`Offence Subdivision` = str_replace(`Offence Subdivision`,"r crimes against the person","Other crimes against the person")) %>% 
+  group_by(`Local Government Area`, `Offence Subdivision` ) %>% 
+    summarise(incidents = sum(`Incidents Recorded`)) 
+data<- criminalfinal %>% arrange(desc(incidents)) %>%
+slice(1) %>% 
+ggplot(aes(y=reorder(`Local Government Area`,incidents),
+       x=incidents,
+       fill = `Offence Subdivision`)) +
+  geom_col()+
+  geom_text(aes(label = incidents)) +
+  xlab("No. of Incidents") +
+  ylab("Local Government Area") +
+  theme(axis.text.x = element_blank()) 
+ ggplotly(data)
+```
+
+
+### Chart2 
+
+```{r vis2, fig.width=10}
+  criminalfinal2<- criminaluse %>% 
+   mutate(lgth = str_length(`Offence Subdivision`)) %>% 
+  mutate(`Offence Subdivision` = substr(`Offence Subdivision`,start = 5,stop = lgth)) %>% 
+  mutate(`Offence Subdivision` = str_replace(`Offence Subdivision`,"r crimes against the person","Other crimes against the person")) %>% 
+  group_by(Year,
+           `Offence Subdivision` ) %>% 
+    summarise(incidents = sum(`Incidents Recorded`)) %>% 
+ggplot(aes(x=as.numeric(Year),
+       y=incidents,
+       color = `Offence Subdivision` )) +
+  geom_line()+
+  geom_point() +
+  scale_x_continuous() +
+  ylab("No. of Incidents") +
+  scale_x_continuous(breaks=seq(2011,2020,2)) +
+  xlab("Year") 
+ ggplotly(criminalfinal2) %>% 
+   hide_legend()
+```
+
+Column {data-height=800, data-width = 1000}
+--------------------------------
+
+- Theft was the **most common** crime in each region.
+
+- **Melbourne** in particular recording round 90,900 burglaries in the past five years,far more than any other region.
+
+- Theft cases reaching a **peak** (about 156,000) in **2016**, but the number has declined in the past two years.
+
+- Burlary/Break and Enter (about 38,000) and Assault and Related Offence (about 37,000) rank second and third, respectively, but far more lower than theft case.
+
+
+Column {data-height=800, data-width = 1000}
+--------------------------------
+
+### Chart3 Which offence_subgroup was most recorded in the previous found offence_subdivision’s?
+
+```{r datacleaning2, include=FALSE}
+criminaluse2 <- criminaldata %>% 
+  select(Year,
+         `Offence Subgroup`,
+         `Offence Subdivision`,
+         `Incidents Recorded`) %>% 
+  filter(`Offence Subdivision` == "B40 Theft")
+```
+```{r vis3, fig.width=9,fig.cap="Incidents in each Offence_subgroup of most recorded Offence_subdivision"}
+    criminalfinal3<- criminaluse2 %>%
+  group_by(Year, `Offence Subgroup`) %>%
+    summarise(incidents = sum(`Incidents Recorded`)) %>%
+ggplot(aes(Year,
+       incidents,
+       fill = `Offence Subgroup` )) +
+  geom_col(position="dodge")+
+   ggtitle("Incidents in each Offence_subgroup of most recorded Offence_subdivision")
+ ggplotly(criminalfinal3)
+```
+
+Row {data-height=800, data-width = 1000}
+--------------------------------
+- Among thefts, **steal from a motor vehicle** has the largest number during the last five years. In 2016, about 63,000 steal from a motor vehicle occurred, but the number of thefts has decreased in the past two years.
+
+- **Other Theft** is second (around40000), and other offence_subgroup make up only a small fraction.
+
+
+Row {data-height=600, data-width = 1000}
+--------------------------------
+### Chart4 What was the trend of each offence_subgroup over the years?
+
+```{r datacleaning3, include=FALSE}
+criminaluse3 <- criminaldata %>% 
+  select(Year,
+         `Offence Subgroup`,
+         `Incidents Recorded`)
+```
+```{r vis4, fig.width=10}
+  criminalfinal4<- criminaluse3 %>% 
+  mutate(lgth = str_length(`Offence Subgroup`)) %>% 
+  mutate(`Offence Subgroup` = substr(`Offence Subgroup`,start = 5,stop = lgth)) %>% 
+  mutate(`Offence Subgroup` = str_replace(`Offence Subgroup`,"r crimes against the person","Other crimes against the person")) %>% 
+  group_by(Year, `Offence Subgroup`) %>% 
+    summarise(incidents = sum(`Incidents Recorded`)) %>% 
+  arrange(`Offence Subgroup`,desc(incidents)) %>% 
+    ggplot(aes(Year,
+       incidents,
+       color = `Offence Subgroup`)) +
+  geom_line()+
+  scale_x_continuous(breaks=seq(2011,2020,2))+
+  geom_point() +
+  ylab("No. of Imcidents")
+ ggplotly(criminalfinal4) %>% 
+   hide_legend()
+```
+Row {data-height=800, data-width = 1000}
+--------------------------------
+- Most offence_subgroup have seen a **decline** in crime over the **last year**, and almost all have seen a small spike in **2016**.
+
+- **Steal from a motor vehicle** in the category of theft has been in the first place in the past five years, with about 50,000 cases occurring every year, far exceeding other offence_subgroups.
+
+- **Other Theft** is in second place (about 39,000 per year) and **Criminal Damage** is third (about 35,000 per year). However, the gap between these two types of crimes and steal from a notor vehicle has gradually **widened** since 2013.
+
+- Since 2019,**public health and safety** cases have **risen** sharply, with almost no cases in 2019 but reached about 37,000 in **2020**.
+
+
+
+Suburb Analysis {data-icon="fa-gitlab"}
+===================================== 
+```{r read-file,include=FALSE}
+data3 <- read_excel(here::here("data/Data_Tables_LGA_Criminal_Incidents_Year_Ending_December_2020.xlsx"),sheet = 4)
+```
+
+```{r clean,include=FALSE}
+miss_var_summary(data3)
+data3 <- data3 %>% 
+  rename(Month = `Year ending`,
+         LGA = `Local Government Area`,
+         Suburb = `Suburb/Town Name`,
+         Offence_Division = `Offence Division`,
+         Offence_Subdivision = `Offence Subdivision`,
+         Offence_Subgroup = `Offence Subgroup`,
+         Incidents_Recorded = `Incidents Recorded`)
+```
+
+Row {data-width=650}
+---
+
+### Suburbs with maximum incidents over the years
+
+```{r Q1-table,echo=FALSE}
+data3 %>% 
+  group_by(Suburb) %>%
+  summarise(Total_Incidents = sum(Incidents_Recorded)) %>% 
+  slice_max(Total_Incidents,n = 10) %>% 
+  kable(caption = "Suburbs with maximum incidents over the years") %>% 
+  kable_styling(bootstrap_options = c("striped","hover","basic"))
+```
+* **Melbourne** had maximum no of incidents with more than 1.5 lakh over the years 
+* Other suburbs had at max. 60K incidents in total. 
+
+Row {.tabset data-width=1000}
+-------------------------------------
+
+### Top 10 Suburb with most incidents recorded in each Years"
+
+```{r Q1,echo=FALSE,fig.width=8,fig.height=15,fig.cap="Top 10 Suburb with most incidents recorded"}
+data3 %>% 
+  group_by(Year,Suburb) %>%
+  summarise(Total_Incidents = sum(Incidents_Recorded)) %>% 
+  arrange(Year,desc(Total_Incidents)) %>% 
+  slice_max(Total_Incidents,n = 10) %>% 
+  mutate(Suburb1 = reorder_within(Suburb,Total_Incidents,Year)) %>% 
+  ggplot(aes(x=Total_Incidents ,
+             y=Suburb1,
+             fill = Suburb)) +
+  geom_col() +
+  geom_text(aes(label = Total_Incidents)) +
+  scale_y_reordered() +
+  ylab("Suburb") +
+  xlab("No. of Incidents") +
+  ggtitle("Top 10 Suburb with most incidents recorded in each Years") +
+  facet_wrap(~Year,ncol = 1, scales = "free")
+```
+
+
+### Top 10 Offences recorded in each Year
+
+```{r Q2,echo=FALSE,fig.width=12,fig.height=15,fig.cap="Top 10 Offences recorded"}
+data3 %>%
+  mutate(lgth = str_length(Offence_Subdivision)) %>% 
+  mutate(Offence_Subdivision = substr(Offence_Subdivision,start = 5,stop = lgth)) %>% 
+  mutate(Offence_Subdivision = str_replace(Offence_Subdivision,"r crimes against the person","Other crimes against the person")) %>% 
+  group_by(Year,Offence_Subdivision) %>% 
+  summarise(Tot_incidents = sum(Incidents_Recorded)) %>% 
+  arrange(Year,desc(Tot_incidents)) %>%
+  slice_max(Tot_incidents,n = 10) %>% 
+  mutate(Offence1 = reorder_within(Offence_Subdivision,Tot_incidents,Year)) %>% 
+    ggplot(aes(y= Offence1,
+         x= Tot_incidents,
+         fill = Offence_Subdivision)) +
+  geom_col() +
+  geom_text(aes(label = Tot_incidents)) +
+  scale_y_reordered() +
+  ylab("Type of Offece") +
+  xlab("No of Incidents") +
+  ggtitle("Top 10 Offences recorded in each Year") +
+  facet_wrap(~Year,ncol = 1,scales = "free")
+```
+
+Column {data-height=200, data-width = 200}
+--------------------------------
+*  **Melbourne** not only had overall maximum incidents, but also had the maxiimum crime in each year.
+*  It had least no of crimes in year **2015**.
+*  Suprisiingly, **Melbourne** saw a massive fall of 10K in crime no. from 2019-2020, maybe due to lockdown restrictions imposed  during COVID-19.
+
+* **Theft** was the most occurred crime across all the years.
+* **Burglary/Break and enter** type of offence decreased over the years.
+
+Row {data-width=1000}
+--------------------------------
+
+### Top 2 Offfences in each Suburb
+```{r Q3,echo=FALSE,fig.width=10,fig.height=4,fig.cap="Top 2 Offfences Suburb wise"}
+Suburb_imp <- data3 %>% 
+  group_by(Year,Suburb) %>%
+  summarise(Total_Incidents = sum(Incidents_Recorded)) %>% 
+  arrange(Year,desc(Total_Incidents)) %>% 
+  slice_max(Total_Incidents,n = 10) 
+Q3graph <- data3 %>% 
+  mutate(lgth = str_length(Offence_Subdivision)) %>% 
+  mutate(Offence_Subdivision = substr(Offence_Subdivision,start = 5,stop = lgth)) %>% 
+  mutate(Offence_Subdivision = str_replace(Offence_Subdivision,"r crimes against the person","Other crimes against the person")) %>% 
+  filter(Suburb %in% unique(Suburb_imp$Suburb)) %>% 
+  group_by(Suburb,Offence_Subdivision) %>% 
+  summarise(Tot_incidents = sum(Incidents_Recorded)) %>% 
+  slice_max(Tot_incidents,n = 2) %>% 
+  arrange(-Tot_incidents) %>% 
+  ggplot(aes(y= reorder(Suburb,Tot_incidents),
+             x =Tot_incidents,
+             fill = Offence_Subdivision)) +
+  geom_col() +
+  xlab("Total Incidents") +
+  ylab("Suburbs") +
+  ggtitle("Top 2 Offfences in each Suburb")
+ggplotly(Q3graph)
+```
+
+* **Theft** is most occurred crime across the affected Suburbs too
+
+Row {data-width=1000}
+--------------------------------
+
+### Trend of Top 2 Offences in each year w.r.t Suburb
+```{r Q4,echo=FALSE,fig.width=10,fig.height=10,Fg.cap="Trend of Top 2 Offences in each year w.r.t Suburb" }
+Q4graoh <- data3 %>% 
+  mutate(lgth = str_length(Offence_Subdivision)) %>% 
+  mutate(Offence_Subdivision = substr(Offence_Subdivision,start = 5,stop = lgth)) %>% 
+  mutate(Offence_Subdivision = str_replace(Offence_Subdivision,"r crimes against the person","Other crimes against the person")) %>% 
+  filter(Suburb %in% unique(Suburb_imp$Suburb)) %>% 
+  group_by(Year,Suburb,Offence_Subdivision) %>% 
+  summarise(Tot_incidents = sum(Incidents_Recorded)) %>% 
+  slice_max(Tot_incidents,n = 2) %>% 
+  ggplot(aes(x= as.numeric(Year),
+             y =Tot_incidents,
+             color = Offence_Subdivision)) +
+  geom_line() +
+  geom_point() +
+  scale_x_continuous(breaks=seq(2011,2020,2)) +
+  xlab("Year") +
+  ylab("Total_incidents") +
+  ggtitle("Trend of Top 2 Offences in each year w.r.t Suburb") +
+  facet_wrap(~Suburb)
+ggplotly(Q4graoh)
+```
+
+
+Row {data-width = 1000}
+--------------------------------
+*  Crime rate of the 2 most occurred offences in the affected Suburbs were pretty much steafy along the years.
+*  Im **Melbourne**.
+   *  **Disorderly and offensive conduct** crime went off radar after 2014.
+   *  **Breachers of order** were only seen from years 2015-2019.
+   *  **Miscellaneous offence** came into action in year 2020.
+
+References {data-icon="fa-table"}
+=====================================     
+
+
+
+
+
+***
+
+**References**
+[1] Crime Statistics Agency Victoria. (2021). Victim Reports. Retrieved from https://www.crimestatistics.vic.gov.au/crime-statistics/latest-victorian-crime-data/victim-reports-2
+
+[2]  C. Sievert. Interactive Web-Based Data Visualization with R, plotly, and shiny. Chapman and Hall/CRC Florida, 2020.
+
+[3] Hadley Wickham and Evan Miller (2021). haven: Import and Export 'SPSS', 'Stata' and 'SAS' Files. R package version 2.4.1.
+  https://CRAN.R-project.org/package=haven
+
+[4] Hadley Wickham and Jennifer Bryan (2019). readxl: Read Excel Files. R package version 1.3.1. https://CRAN.R-project.org/package=readxl
+
+[5] Hao Zhu (2021). kableExtra: Construct Complex Table with 'kable' and Pipe Syntax. R package version 1.3.4.
+  https://CRAN.R-project.org/package=kableExtra
+
+[6] H. Wickham. ggplot2: Elegant Graphics for Data Analysis. Springer-Verlag New York, 2016.
+
+[7] Katherine Goode and Kathleen Rey (2019). ggResidpanel: Panels and Interactive Versions of Diagnostic Plots using 'ggplot2'. R package
+  version 0.3.0. https://CRAN.R-project.org/package=ggResidpanel
+
+[8] Kirill Müller (2020). here: A Simpler Way to Find Your Files. R package version 1.0.1. https://CRAN.R-project.org/package=here
+
+[9] R Core Team (2021). R: A language and environment for statistical computing. R Foundation for Statistical Computing, Vienna, Austria. URL
+  https://www.R-project.org/.
+
+[10] Richard Iannone, JJ Allaire and Barbara Borges (2020). flexdashboard: R Markdown Format for Flexible Dashboards. R package version 0.5.2.
+  https://CRAN.R-project.org/package=flexdashboard
+
+[11] Yihui Xie (2021). bookdown: Authoring Books and Technical Documents with R Markdown. R package version 0.22.
+
+[12] Yihui Xie (2016). bookdown: Authoring Books and Technical Documents with R Markdown. Chapman and Hall/CRC. ISBN 978-1138700109
+
+
+***
+
+<b><font face="Georgia" size="10em" color="#8feb34"><center>Thank You!</center></font></b> 
+
+
+
+
+

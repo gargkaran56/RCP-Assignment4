@@ -1,0 +1,871 @@
+"","Year","Police Region","Local Government Area","Incidents Recorded"
+"1",2020,"1 North West Metro","Banyule",6717
+"2",2020,"1 North West Metro","Brimbank",15399
+"3",2020,"1 North West Metro","Darebin",12046
+"4",2020,"1 North West Metro","Hobsons Bay",4497
+"5",2020,"1 North West Metro","Hume",16216
+"6",2020,"1 North West Metro","Maribyrnong",7342
+"7",2020,"1 North West Metro","Melbourne",26850
+"8",2020,"1 North West Metro","Melton",10113
+"9",2020,"1 North West Metro","Moonee Valley",6463
+"10",2020,"1 North West Metro","Moreland",10829
+"11",2020,"1 North West Metro","Nillumbik",1632
+"12",2020,"1 North West Metro","Whittlesea",12155
+"13",2020,"1 North West Metro","Wyndham",13246
+"14",2020,"1 North West Metro","Yarra",11403
+"15",2020,"1 North West Metro","Total",154908
+"16",2020,"2 Eastern","Alpine",413
+"17",2020,"2 Eastern","Bass Coast",2053
+"18",2020,"2 Eastern","Baw Baw",3690
+"19",2020,"2 Eastern","Benalla",996
+"20",2020,"2 Eastern","Boroondara",6252
+"21",2020,"2 Eastern","East Gippsland",3686
+"22",2020,"2 Eastern","Greater Shepparton",6036
+"23",2020,"2 Eastern","Indigo",446
+"24",2020,"2 Eastern","Knox",8756
+"25",2020,"2 Eastern","Latrobe",9646
+"26",2020,"2 Eastern","Manningham",3439
+"27",2020,"2 Eastern","Mansfield",372
+"28",2020,"2 Eastern","Maroondah",5777
+"29",2020,"2 Eastern","Mitchell",3227
+"30",2020,"2 Eastern","Moira",1604
+"31",2020,"2 Eastern","Monash",9916
+"32",2020,"2 Eastern","Murrindindi",657
+"33",2020,"2 Eastern","South Gippsland",1260
+"34",2020,"2 Eastern","Strathbogie",483
+"35",2020,"2 Eastern","Towong",158
+"36",2020,"2 Eastern","Wangaratta",1652
+"37",2020,"2 Eastern","Wellington",3325
+"38",2020,"2 Eastern","Whitehorse",7223
+"39",2020,"2 Eastern","Wodonga",2588
+"40",2020,"2 Eastern","Yarra Ranges",6370
+"41",2020,"2 Eastern","Total",90025
+"42",2020,"3 Southern Metro","Bayside",4138
+"43",2020,"3 Southern Metro","Cardinia",5844
+"44",2020,"3 Southern Metro","Casey",17296
+"45",2020,"3 Southern Metro","Frankston",10822
+"46",2020,"3 Southern Metro","Glen Eira",6277
+"47",2020,"3 Southern Metro","Greater Dandenong",15005
+"48",2020,"3 Southern Metro","Kingston",8640
+"49",2020,"3 Southern Metro","Mornington Peninsula",8134
+"50",2020,"3 Southern Metro","Port Phillip",10319
+"51",2020,"3 Southern Metro","Stonnington",9077
+"52",2020,"3 Southern Metro","Total",95552
+"53",2020,"4 Western","Ararat",1104
+"54",2020,"4 Western","Ballarat",7383
+"55",2020,"4 Western","Buloke",284
+"56",2020,"4 Western","Campaspe",2500
+"57",2020,"4 Western","Central Goldfields",809
+"58",2020,"4 Western","Colac-Otway",1364
+"59",2020,"4 Western","Corangamite",651
+"60",2020,"4 Western","Gannawarra",685
+"61",2020,"4 Western","Glenelg",1084
+"62",2020,"4 Western","Golden Plains",448
+"63",2020,"4 Western","Greater Bendigo",8121
+"64",2020,"4 Western","Greater Geelong",16605
+"65",2020,"4 Western","Hepburn",563
+"66",2020,"4 Western","Hindmarsh",313
+"67",2020,"4 Western","Horsham",1484
+"68",2020,"4 Western","Loddon",394
+"69",2020,"4 Western","Macedon Ranges",1918
+"70",2020,"4 Western","Mildura",4667
+"71",2020,"4 Western","Moorabool",2050
+"72",2020,"4 Western","Mount Alexander",763
+"73",2020,"4 Western","Moyne",535
+"74",2020,"4 Western","Northern Grampians",836
+"75",2020,"4 Western","Pyrenees",371
+"76",2020,"4 Western","Queenscliffe",100
+"77",2020,"4 Western","Southern Grampians",833
+"78",2020,"4 Western","Surf Coast",1200
+"79",2020,"4 Western","Swan Hill",1819
+"80",2020,"4 Western","Warrnambool",2323
+"81",2020,"4 Western","West Wimmera",132
+"82",2020,"4 Western","Yarriambiack",365
+"83",2020,"4 Western","Total",61704
+"84",2020,"Justice Institutions and Immigration Facilities","Justice Institutions and Immigration Facilities",1329
+"85",2020,"Justice Institutions and Immigration Facilities","Total",1329
+"86",2020,"Unincorporated Vic","Unincorporated Vic",37
+"87",2020,"Unincorporated Vic","Total",37
+"88",2019,"1 North West Metro","Banyule",7047
+"89",2019,"1 North West Metro","Brimbank",15153
+"90",2019,"1 North West Metro","Darebin",11420
+"91",2019,"1 North West Metro","Hobsons Bay",4999
+"92",2019,"1 North West Metro","Hume",15879
+"93",2019,"1 North West Metro","Maribyrnong",6909
+"94",2019,"1 North West Metro","Melbourne",26971
+"95",2019,"1 North West Metro","Melton",9080
+"96",2019,"1 North West Metro","Moonee Valley",6476
+"97",2019,"1 North West Metro","Moreland",10845
+"98",2019,"1 North West Metro","Nillumbik",1655
+"99",2019,"1 North West Metro","Whittlesea",12068
+"100",2019,"1 North West Metro","Wyndham",13220
+"101",2019,"1 North West Metro","Yarra",11074
+"102",2019,"1 North West Metro","Total",152796
+"103",2019,"2 Eastern","Alpine",426
+"104",2019,"2 Eastern","Bass Coast",1836
+"105",2019,"2 Eastern","Baw Baw",3606
+"106",2019,"2 Eastern","Benalla",961
+"107",2019,"2 Eastern","Boroondara",6177
+"108",2019,"2 Eastern","East Gippsland",3645
+"109",2019,"2 Eastern","Greater Shepparton",6349
+"110",2019,"2 Eastern","Indigo",434
+"111",2019,"2 Eastern","Knox",8792
+"112",2019,"2 Eastern","Latrobe",10104
+"113",2019,"2 Eastern","Manningham",3824
+"114",2019,"2 Eastern","Mansfield",315
+"115",2019,"2 Eastern","Maroondah",5996
+"116",2019,"2 Eastern","Mitchell",3141
+"117",2019,"2 Eastern","Moira",1939
+"118",2019,"2 Eastern","Monash",9072
+"119",2019,"2 Eastern","Murrindindi",604
+"120",2019,"2 Eastern","South Gippsland",1314
+"121",2019,"2 Eastern","Strathbogie",447
+"122",2019,"2 Eastern","Towong",149
+"123",2019,"2 Eastern","Wangaratta",1764
+"124",2019,"2 Eastern","Wellington",3274
+"125",2019,"2 Eastern","Whitehorse",7272
+"126",2019,"2 Eastern","Wodonga",2793
+"127",2019,"2 Eastern","Yarra Ranges",6163
+"128",2019,"2 Eastern","Total",90397
+"129",2019,"3 Southern Metro","Bayside",4016
+"130",2019,"3 Southern Metro","Cardinia",5257
+"131",2019,"3 Southern Metro","Casey",16646
+"132",2019,"3 Southern Metro","Frankston",11037
+"133",2019,"3 Southern Metro","Glen Eira",5698
+"134",2019,"3 Southern Metro","Greater Dandenong",14695
+"135",2019,"3 Southern Metro","Kingston",8921
+"136",2019,"3 Southern Metro","Mornington Peninsula",8658
+"137",2019,"3 Southern Metro","Port Phillip",9806
+"138",2019,"3 Southern Metro","Stonnington",9054
+"139",2019,"3 Southern Metro","Total",93788
+"140",2019,"4 Western","Ararat",853
+"141",2019,"4 Western","Ballarat",8931
+"142",2019,"4 Western","Buloke",242
+"143",2019,"4 Western","Campaspe",2918
+"144",2019,"4 Western","Central Goldfields",892
+"145",2019,"4 Western","Colac-Otway",1287
+"146",2019,"4 Western","Corangamite",524
+"147",2019,"4 Western","Gannawarra",630
+"148",2019,"4 Western","Glenelg",1081
+"149",2019,"4 Western","Golden Plains",485
+"150",2019,"4 Western","Greater Bendigo",8439
+"151",2019,"4 Western","Greater Geelong",16494
+"152",2019,"4 Western","Hepburn",724
+"153",2019,"4 Western","Hindmarsh",229
+"154",2019,"4 Western","Horsham",1320
+"155",2019,"4 Western","Loddon",373
+"156",2019,"4 Western","Macedon Ranges",1744
+"157",2019,"4 Western","Mildura",5553
+"158",2019,"4 Western","Moorabool",1597
+"159",2019,"4 Western","Mount Alexander",911
+"160",2019,"4 Western","Moyne",506
+"161",2019,"4 Western","Northern Grampians",764
+"162",2019,"4 Western","Pyrenees",411
+"163",2019,"4 Western","Queenscliffe",105
+"164",2019,"4 Western","Southern Grampians",945
+"165",2019,"4 Western","Surf Coast",1003
+"166",2019,"4 Western","Swan Hill",1872
+"167",2019,"4 Western","Warrnambool",2604
+"168",2019,"4 Western","West Wimmera",130
+"169",2019,"4 Western","Yarriambiack",298
+"170",2019,"4 Western","Total",63865
+"171",2019,"Justice Institutions and Immigration Facilities","Justice Institutions and Immigration Facilities",1357
+"172",2019,"Justice Institutions and Immigration Facilities","Total",1357
+"173",2019,"Unincorporated Vic","Unincorporated Vic",108
+"174",2019,"Unincorporated Vic","Total",108
+"175",2018,"1 North West Metro","Banyule",7167
+"176",2018,"1 North West Metro","Brimbank",14573
+"177",2018,"1 North West Metro","Darebin",11606
+"178",2018,"1 North West Metro","Hobsons Bay",4813
+"179",2018,"1 North West Metro","Hume",15544
+"180",2018,"1 North West Metro","Maribyrnong",6938
+"181",2018,"1 North West Metro","Melbourne",26893
+"182",2018,"1 North West Metro","Melton",8053
+"183",2018,"1 North West Metro","Moonee Valley",6684
+"184",2018,"1 North West Metro","Moreland",11611
+"185",2018,"1 North West Metro","Nillumbik",1645
+"186",2018,"1 North West Metro","Whittlesea",11777
+"187",2018,"1 North West Metro","Wyndham",11290
+"188",2018,"1 North West Metro","Yarra",11314
+"189",2018,"1 North West Metro","Total",149908
+"190",2018,"2 Eastern","Alpine",393
+"191",2018,"2 Eastern","Bass Coast",1661
+"192",2018,"2 Eastern","Baw Baw",3165
+"193",2018,"2 Eastern","Benalla",874
+"194",2018,"2 Eastern","Boroondara",5603
+"195",2018,"2 Eastern","East Gippsland",3171
+"196",2018,"2 Eastern","Greater Shepparton",6196
+"197",2018,"2 Eastern","Indigo",342
+"198",2018,"2 Eastern","Knox",8075
+"199",2018,"2 Eastern","Latrobe",9908
+"200",2018,"2 Eastern","Manningham",3347
+"201",2018,"2 Eastern","Mansfield",333
+"202",2018,"2 Eastern","Maroondah",5913
+"203",2018,"2 Eastern","Mitchell",2998
+"204",2018,"2 Eastern","Moira",1566
+"205",2018,"2 Eastern","Monash",8231
+"206",2018,"2 Eastern","Murrindindi",571
+"207",2018,"2 Eastern","South Gippsland",1023
+"208",2018,"2 Eastern","Strathbogie",440
+"209",2018,"2 Eastern","Towong",178
+"210",2018,"2 Eastern","Wangaratta",1740
+"211",2018,"2 Eastern","Wellington",2824
+"212",2018,"2 Eastern","Whitehorse",6251
+"213",2018,"2 Eastern","Wodonga",2385
+"214",2018,"2 Eastern","Yarra Ranges",5541
+"215",2018,"2 Eastern","Total",82729
+"216",2018,"3 Southern Metro","Bayside",3697
+"217",2018,"3 Southern Metro","Cardinia",4571
+"218",2018,"3 Southern Metro","Casey",15895
+"219",2018,"3 Southern Metro","Frankston",11298
+"220",2018,"3 Southern Metro","Glen Eira",4975
+"221",2018,"3 Southern Metro","Greater Dandenong",14078
+"222",2018,"3 Southern Metro","Kingston",8532
+"223",2018,"3 Southern Metro","Mornington Peninsula",8136
+"224",2018,"3 Southern Metro","Port Phillip",9958
+"225",2018,"3 Southern Metro","Stonnington",8338
+"226",2018,"3 Southern Metro","Total",89478
+"227",2018,"4 Western","Ararat",900
+"228",2018,"4 Western","Ballarat",8054
+"229",2018,"4 Western","Buloke",182
+"230",2018,"4 Western","Campaspe",2841
+"231",2018,"4 Western","Central Goldfields",970
+"232",2018,"4 Western","Colac-Otway",1269
+"233",2018,"4 Western","Corangamite",539
+"234",2018,"4 Western","Gannawarra",519
+"235",2018,"4 Western","Glenelg",1030
+"236",2018,"4 Western","Golden Plains",509
+"237",2018,"4 Western","Greater Bendigo",7734
+"238",2018,"4 Western","Greater Geelong",16013
+"239",2018,"4 Western","Hepburn",602
+"240",2018,"4 Western","Hindmarsh",255
+"241",2018,"4 Western","Horsham",1575
+"242",2018,"4 Western","Loddon",390
+"243",2018,"4 Western","Macedon Ranges",1660
+"244",2018,"4 Western","Mildura",5547
+"245",2018,"4 Western","Moorabool",1764
+"246",2018,"4 Western","Mount Alexander",691
+"247",2018,"4 Western","Moyne",428
+"248",2018,"4 Western","Northern Grampians",764
+"249",2018,"4 Western","Pyrenees",340
+"250",2018,"4 Western","Queenscliffe",101
+"251",2018,"4 Western","Southern Grampians",1111
+"252",2018,"4 Western","Surf Coast",878
+"253",2018,"4 Western","Swan Hill",1781
+"254",2018,"4 Western","Warrnambool",2907
+"255",2018,"4 Western","West Wimmera",128
+"256",2018,"4 Western","Yarriambiack",335
+"257",2018,"4 Western","Total",61817
+"258",2018,"Justice Institutions and Immigration Facilities","Justice Institutions and Immigration Facilities",1497
+"259",2018,"Justice Institutions and Immigration Facilities","Total",1497
+"260",2018,"Unincorporated Vic","Unincorporated Vic",95
+"261",2018,"Unincorporated Vic","Total",95
+"262",2017,"1 North West Metro","Banyule",7434
+"263",2017,"1 North West Metro","Brimbank",13247
+"264",2017,"1 North West Metro","Darebin",11445
+"265",2017,"1 North West Metro","Hobsons Bay",4908
+"266",2017,"1 North West Metro","Hume",15048
+"267",2017,"1 North West Metro","Maribyrnong",6466
+"268",2017,"1 North West Metro","Melbourne",26518
+"269",2017,"1 North West Metro","Melton",8049
+"270",2017,"1 North West Metro","Moonee Valley",6668
+"271",2017,"1 North West Metro","Moreland",10525
+"272",2017,"1 North West Metro","Nillumbik",1845
+"273",2017,"1 North West Metro","Whittlesea",11342
+"274",2017,"1 North West Metro","Wyndham",10855
+"275",2017,"1 North West Metro","Yarra",10562
+"276",2017,"1 North West Metro","Total",144912
+"277",2017,"2 Eastern","Alpine",310
+"278",2017,"2 Eastern","Bass Coast",1936
+"279",2017,"2 Eastern","Baw Baw",2766
+"280",2017,"2 Eastern","Benalla",976
+"281",2017,"2 Eastern","Boroondara",5741
+"282",2017,"2 Eastern","East Gippsland",2973
+"283",2017,"2 Eastern","Greater Shepparton",5940
+"284",2017,"2 Eastern","Indigo",377
+"285",2017,"2 Eastern","Knox",8432
+"286",2017,"2 Eastern","Latrobe",9282
+"287",2017,"2 Eastern","Manningham",3699
+"288",2017,"2 Eastern","Mansfield",494
+"289",2017,"2 Eastern","Maroondah",6300
+"290",2017,"2 Eastern","Mitchell",3059
+"291",2017,"2 Eastern","Moira",1450
+"292",2017,"2 Eastern","Monash",8175
+"293",2017,"2 Eastern","Murrindindi",546
+"294",2017,"2 Eastern","South Gippsland",1004
+"295",2017,"2 Eastern","Strathbogie",438
+"296",2017,"2 Eastern","Towong",174
+"297",2017,"2 Eastern","Wangaratta",1780
+"298",2017,"2 Eastern","Wellington",2722
+"299",2017,"2 Eastern","Whitehorse",6513
+"300",2017,"2 Eastern","Wodonga",2423
+"301",2017,"2 Eastern","Yarra Ranges",5720
+"302",2017,"2 Eastern","Total",83230
+"303",2017,"3 Southern Metro","Bayside",3831
+"304",2017,"3 Southern Metro","Cardinia",4350
+"305",2017,"3 Southern Metro","Casey",15066
+"306",2017,"3 Southern Metro","Frankston",10703
+"307",2017,"3 Southern Metro","Glen Eira",5349
+"308",2017,"3 Southern Metro","Greater Dandenong",13669
+"309",2017,"3 Southern Metro","Kingston",7696
+"310",2017,"3 Southern Metro","Mornington Peninsula",8463
+"311",2017,"3 Southern Metro","Port Phillip",9689
+"312",2017,"3 Southern Metro","Stonnington",7895
+"313",2017,"3 Southern Metro","Total",86711
+"314",2017,"4 Western","Ararat",912
+"315",2017,"4 Western","Ballarat",8958
+"316",2017,"4 Western","Buloke",158
+"317",2017,"4 Western","Campaspe",2505
+"318",2017,"4 Western","Central Goldfields",859
+"319",2017,"4 Western","Colac-Otway",1381
+"320",2017,"4 Western","Corangamite",709
+"321",2017,"4 Western","Gannawarra",444
+"322",2017,"4 Western","Glenelg",1243
+"323",2017,"4 Western","Golden Plains",499
+"324",2017,"4 Western","Greater Bendigo",7200
+"325",2017,"4 Western","Greater Geelong",17116
+"326",2017,"4 Western","Hepburn",660
+"327",2017,"4 Western","Hindmarsh",278
+"328",2017,"4 Western","Horsham",1575
+"329",2017,"4 Western","Loddon",295
+"330",2017,"4 Western","Macedon Ranges",1600
+"331",2017,"4 Western","Mildura",4804
+"332",2017,"4 Western","Moorabool",1737
+"333",2017,"4 Western","Mount Alexander",767
+"334",2017,"4 Western","Moyne",465
+"335",2017,"4 Western","Northern Grampians",842
+"336",2017,"4 Western","Pyrenees",357
+"337",2017,"4 Western","Queenscliffe",126
+"338",2017,"4 Western","Southern Grampians",984
+"339",2017,"4 Western","Surf Coast",996
+"340",2017,"4 Western","Swan Hill",1773
+"341",2017,"4 Western","Warrnambool",2650
+"342",2017,"4 Western","West Wimmera",126
+"343",2017,"4 Western","Yarriambiack",355
+"344",2017,"4 Western","Total",62374
+"345",2017,"Justice Institutions and Immigration Facilities","Justice Institutions and Immigration Facilities",1476
+"346",2017,"Justice Institutions and Immigration Facilities","Total",1476
+"347",2017,"Unincorporated Vic","Unincorporated Vic",119
+"348",2017,"Unincorporated Vic","Total",119
+"349",2016,"1 North West Metro","Banyule",7482
+"350",2016,"1 North West Metro","Brimbank",15099
+"351",2016,"1 North West Metro","Darebin",13227
+"352",2016,"1 North West Metro","Hobsons Bay",5340
+"353",2016,"1 North West Metro","Hume",17663
+"354",2016,"1 North West Metro","Maribyrnong",7190
+"355",2016,"1 North West Metro","Melbourne",28254
+"356",2016,"1 North West Metro","Melton",9066
+"357",2016,"1 North West Metro","Moonee Valley",7741
+"358",2016,"1 North West Metro","Moreland",12121
+"359",2016,"1 North West Metro","Nillumbik",2264
+"360",2016,"1 North West Metro","Whittlesea",13079
+"361",2016,"1 North West Metro","Wyndham",12370
+"362",2016,"1 North West Metro","Yarra",11293
+"363",2016,"1 North West Metro","Total",162189
+"364",2016,"2 Eastern","Alpine",267
+"365",2016,"2 Eastern","Bass Coast",2070
+"366",2016,"2 Eastern","Baw Baw",2921
+"367",2016,"2 Eastern","Benalla",1019
+"368",2016,"2 Eastern","Boroondara",7061
+"369",2016,"2 Eastern","East Gippsland",3096
+"370",2016,"2 Eastern","Greater Shepparton",6329
+"371",2016,"2 Eastern","Indigo",319
+"372",2016,"2 Eastern","Knox",9168
+"373",2016,"2 Eastern","Latrobe",10450
+"374",2016,"2 Eastern","Manningham",3961
+"375",2016,"2 Eastern","Mansfield",481
+"376",2016,"2 Eastern","Maroondah",6768
+"377",2016,"2 Eastern","Mitchell",3228
+"378",2016,"2 Eastern","Moira",1369
+"379",2016,"2 Eastern","Monash",8962
+"380",2016,"2 Eastern","Murrindindi",547
+"381",2016,"2 Eastern","South Gippsland",1139
+"382",2016,"2 Eastern","Strathbogie",479
+"383",2016,"2 Eastern","Towong",176
+"384",2016,"2 Eastern","Wangaratta",1811
+"385",2016,"2 Eastern","Wellington",3318
+"386",2016,"2 Eastern","Whitehorse",6354
+"387",2016,"2 Eastern","Wodonga",2496
+"388",2016,"2 Eastern","Yarra Ranges",6453
+"389",2016,"2 Eastern","Total",90242
+"390",2016,"3 Southern Metro","Bayside",4207
+"391",2016,"3 Southern Metro","Cardinia",5383
+"392",2016,"3 Southern Metro","Casey",18201
+"393",2016,"3 Southern Metro","Frankston",12487
+"394",2016,"3 Southern Metro","Glen Eira",5675
+"395",2016,"3 Southern Metro","Greater Dandenong",15470
+"396",2016,"3 Southern Metro","Kingston",8656
+"397",2016,"3 Southern Metro","Mornington Peninsula",9116
+"398",2016,"3 Southern Metro","Port Phillip",10487
+"399",2016,"3 Southern Metro","Stonnington",9177
+"400",2016,"3 Southern Metro","Total",98859
+"401",2016,"4 Western","Ararat",867
+"402",2016,"4 Western","Ballarat",9475
+"403",2016,"4 Western","Buloke",169
+"404",2016,"4 Western","Campaspe",2815
+"405",2016,"4 Western","Central Goldfields",1013
+"406",2016,"4 Western","Colac-Otway",1445
+"407",2016,"4 Western","Corangamite",733
+"408",2016,"4 Western","Gannawarra",491
+"409",2016,"4 Western","Glenelg",1374
+"410",2016,"4 Western","Golden Plains",646
+"411",2016,"4 Western","Greater Bendigo",7933
+"412",2016,"4 Western","Greater Geelong",18628
+"413",2016,"4 Western","Hepburn",729
+"414",2016,"4 Western","Hindmarsh",235
+"415",2016,"4 Western","Horsham",1880
+"416",2016,"4 Western","Loddon",382
+"417",2016,"4 Western","Macedon Ranges",1646
+"418",2016,"4 Western","Mildura",5091
+"419",2016,"4 Western","Moorabool",2005
+"420",2016,"4 Western","Mount Alexander",951
+"421",2016,"4 Western","Moyne",491
+"422",2016,"4 Western","Northern Grampians",936
+"423",2016,"4 Western","Pyrenees",391
+"424",2016,"4 Western","Queenscliffe",124
+"425",2016,"4 Western","Southern Grampians",987
+"426",2016,"4 Western","Surf Coast",1093
+"427",2016,"4 Western","Swan Hill",1735
+"428",2016,"4 Western","Warrnambool",2492
+"429",2016,"4 Western","West Wimmera",108
+"430",2016,"4 Western","Yarriambiack",330
+"431",2016,"4 Western","Total",67195
+"432",2016,"Justice Institutions and Immigration Facilities","Justice Institutions and Immigration Facilities",1016
+"433",2016,"Justice Institutions and Immigration Facilities","Total",1016
+"434",2016,"Unincorporated Vic","Unincorporated Vic",121
+"435",2016,"Unincorporated Vic","Total",121
+"436",2015,"1 North West Metro","Banyule",6857
+"437",2015,"1 North West Metro","Brimbank",14821
+"438",2015,"1 North West Metro","Darebin",11474
+"439",2015,"1 North West Metro","Hobsons Bay",5358
+"440",2015,"1 North West Metro","Hume",14882
+"441",2015,"1 North West Metro","Maribyrnong",6909
+"442",2015,"1 North West Metro","Melbourne",24848
+"443",2015,"1 North West Metro","Melton",8376
+"444",2015,"1 North West Metro","Moonee Valley",6957
+"445",2015,"1 North West Metro","Moreland",11167
+"446",2015,"1 North West Metro","Nillumbik",1941
+"447",2015,"1 North West Metro","Whittlesea",10378
+"448",2015,"1 North West Metro","Wyndham",11322
+"449",2015,"1 North West Metro","Yarra",10051
+"450",2015,"1 North West Metro","Total",145341
+"451",2015,"2 Eastern","Alpine",357
+"452",2015,"2 Eastern","Bass Coast",1929
+"453",2015,"2 Eastern","Baw Baw",2490
+"454",2015,"2 Eastern","Benalla",810
+"455",2015,"2 Eastern","Boroondara",5897
+"456",2015,"2 Eastern","East Gippsland",3147
+"457",2015,"2 Eastern","Greater Shepparton",5498
+"458",2015,"2 Eastern","Indigo",380
+"459",2015,"2 Eastern","Knox",7355
+"460",2015,"2 Eastern","Latrobe",9019
+"461",2015,"2 Eastern","Manningham",3354
+"462",2015,"2 Eastern","Mansfield",339
+"463",2015,"2 Eastern","Maroondah",5792
+"464",2015,"2 Eastern","Mitchell",2656
+"465",2015,"2 Eastern","Moira",1104
+"466",2015,"2 Eastern","Monash",7525
+"467",2015,"2 Eastern","Murrindindi",509
+"468",2015,"2 Eastern","South Gippsland",907
+"469",2015,"2 Eastern","Strathbogie",359
+"470",2015,"2 Eastern","Towong",167
+"471",2015,"2 Eastern","Wangaratta",1629
+"472",2015,"2 Eastern","Wellington",2965
+"473",2015,"2 Eastern","Whitehorse",5781
+"474",2015,"2 Eastern","Wodonga",2617
+"475",2015,"2 Eastern","Yarra Ranges",5442
+"476",2015,"2 Eastern","Total",78028
+"477",2015,"3 Southern Metro","Bayside",3643
+"478",2015,"3 Southern Metro","Cardinia",4679
+"479",2015,"3 Southern Metro","Casey",15157
+"480",2015,"3 Southern Metro","Frankston",10925
+"481",2015,"3 Southern Metro","Glen Eira",5141
+"482",2015,"3 Southern Metro","Greater Dandenong",13515
+"483",2015,"3 Southern Metro","Kingston",8065
+"484",2015,"3 Southern Metro","Mornington Peninsula",8134
+"485",2015,"3 Southern Metro","Port Phillip",9807
+"486",2015,"3 Southern Metro","Stonnington",7776
+"487",2015,"3 Southern Metro","Total",86842
+"488",2015,"4 Western","Ararat",910
+"489",2015,"4 Western","Ballarat",8730
+"490",2015,"4 Western","Buloke",178
+"491",2015,"4 Western","Campaspe",2332
+"492",2015,"4 Western","Central Goldfields",846
+"493",2015,"4 Western","Colac-Otway",1193
+"494",2015,"4 Western","Corangamite",507
+"495",2015,"4 Western","Gannawarra",456
+"496",2015,"4 Western","Glenelg",1227
+"497",2015,"4 Western","Golden Plains",543
+"498",2015,"4 Western","Greater Bendigo",6349
+"499",2015,"4 Western","Greater Geelong",15451
+"500",2015,"4 Western","Hepburn",584
+"501",2015,"4 Western","Hindmarsh",162
+"502",2015,"4 Western","Horsham",1973
+"503",2015,"4 Western","Loddon",313
+"504",2015,"4 Western","Macedon Ranges",1518
+"505",2015,"4 Western","Mildura",4680
+"506",2015,"4 Western","Moorabool",1602
+"507",2015,"4 Western","Mount Alexander",720
+"508",2015,"4 Western","Moyne",407
+"509",2015,"4 Western","Northern Grampians",811
+"510",2015,"4 Western","Pyrenees",355
+"511",2015,"4 Western","Queenscliffe",154
+"512",2015,"4 Western","Southern Grampians",799
+"513",2015,"4 Western","Surf Coast",1160
+"514",2015,"4 Western","Swan Hill",1615
+"515",2015,"4 Western","Warrnambool",2157
+"516",2015,"4 Western","West Wimmera",103
+"517",2015,"4 Western","Yarriambiack",315
+"518",2015,"4 Western","Total",58150
+"519",2015,"Justice Institutions and Immigration Facilities","Justice Institutions and Immigration Facilities",777
+"520",2015,"Justice Institutions and Immigration Facilities","Total",777
+"521",2015,"Unincorporated Vic","Unincorporated Vic",93
+"522",2015,"Unincorporated Vic","Total",93
+"523",2014,"1 North West Metro","Banyule",6807
+"524",2014,"1 North West Metro","Brimbank",13725
+"525",2014,"1 North West Metro","Darebin",10976
+"526",2014,"1 North West Metro","Hobsons Bay",5557
+"527",2014,"1 North West Metro","Hume",13223
+"528",2014,"1 North West Metro","Maribyrnong",6576
+"529",2014,"1 North West Metro","Melbourne",23725
+"530",2014,"1 North West Metro","Melton",7530
+"531",2014,"1 North West Metro","Moonee Valley",6446
+"532",2014,"1 North West Metro","Moreland",10295
+"533",2014,"1 North West Metro","Nillumbik",1585
+"534",2014,"1 North West Metro","Whittlesea",10239
+"535",2014,"1 North West Metro","Wyndham",10157
+"536",2014,"1 North West Metro","Yarra",9958
+"537",2014,"1 North West Metro","Total",136799
+"538",2014,"2 Eastern","Alpine",278
+"539",2014,"2 Eastern","Bass Coast",1996
+"540",2014,"2 Eastern","Baw Baw",2278
+"541",2014,"2 Eastern","Benalla",819
+"542",2014,"2 Eastern","Boroondara",5686
+"543",2014,"2 Eastern","East Gippsland",2921
+"544",2014,"2 Eastern","Greater Shepparton",5629
+"545",2014,"2 Eastern","Indigo",329
+"546",2014,"2 Eastern","Knox",7160
+"547",2014,"2 Eastern","Latrobe",7815
+"548",2014,"2 Eastern","Manningham",3130
+"549",2014,"2 Eastern","Mansfield",388
+"550",2014,"2 Eastern","Maroondah",5872
+"551",2014,"2 Eastern","Mitchell",2145
+"552",2014,"2 Eastern","Moira",1083
+"553",2014,"2 Eastern","Monash",6885
+"554",2014,"2 Eastern","Murrindindi",517
+"555",2014,"2 Eastern","South Gippsland",901
+"556",2014,"2 Eastern","Strathbogie",340
+"557",2014,"2 Eastern","Towong",148
+"558",2014,"2 Eastern","Wangaratta",1689
+"559",2014,"2 Eastern","Wellington",2900
+"560",2014,"2 Eastern","Whitehorse",5700
+"561",2014,"2 Eastern","Wodonga",2431
+"562",2014,"2 Eastern","Yarra Ranges",5353
+"563",2014,"2 Eastern","Total",74393
+"564",2014,"3 Southern Metro","Bayside",3231
+"565",2014,"3 Southern Metro","Cardinia",3862
+"566",2014,"3 Southern Metro","Casey",12926
+"567",2014,"3 Southern Metro","Frankston",10627
+"568",2014,"3 Southern Metro","Glen Eira",4331
+"569",2014,"3 Southern Metro","Greater Dandenong",12060
+"570",2014,"3 Southern Metro","Kingston",7172
+"571",2014,"3 Southern Metro","Mornington Peninsula",7681
+"572",2014,"3 Southern Metro","Port Phillip",9080
+"573",2014,"3 Southern Metro","Stonnington",7158
+"574",2014,"3 Southern Metro","Total",78128
+"575",2014,"4 Western","Ararat",797
+"576",2014,"4 Western","Ballarat",7533
+"577",2014,"4 Western","Buloke",180
+"578",2014,"4 Western","Campaspe",2330
+"579",2014,"4 Western","Central Goldfields",805
+"580",2014,"4 Western","Colac-Otway",1100
+"581",2014,"4 Western","Corangamite",474
+"582",2014,"4 Western","Gannawarra",427
+"583",2014,"4 Western","Glenelg",1400
+"584",2014,"4 Western","Golden Plains",467
+"585",2014,"4 Western","Greater Bendigo",6183
+"586",2014,"4 Western","Greater Geelong",15071
+"587",2014,"4 Western","Hepburn",494
+"588",2014,"4 Western","Hindmarsh",147
+"589",2014,"4 Western","Horsham",1577
+"590",2014,"4 Western","Loddon",237
+"591",2014,"4 Western","Macedon Ranges",1475
+"592",2014,"4 Western","Mildura",4659
+"593",2014,"4 Western","Moorabool",1455
+"594",2014,"4 Western","Mount Alexander",671
+"595",2014,"4 Western","Moyne",470
+"596",2014,"4 Western","Northern Grampians",697
+"597",2014,"4 Western","Pyrenees",346
+"598",2014,"4 Western","Queenscliffe",102
+"599",2014,"4 Western","Southern Grampians",706
+"600",2014,"4 Western","Surf Coast",982
+"601",2014,"4 Western","Swan Hill",1629
+"602",2014,"4 Western","Warrnambool",1986
+"603",2014,"4 Western","West Wimmera",99
+"604",2014,"4 Western","Yarriambiack",189
+"605",2014,"4 Western","Total",54688
+"606",2014,"Justice Institutions and Immigration Facilities","Justice Institutions and Immigration Facilities",719
+"607",2014,"Justice Institutions and Immigration Facilities","Total",719
+"608",2014,"Unincorporated Vic","Unincorporated Vic",100
+"609",2014,"Unincorporated Vic","Total",100
+"610",2013,"1 North West Metro","Banyule",6430
+"611",2013,"1 North West Metro","Brimbank",15273
+"612",2013,"1 North West Metro","Darebin",10018
+"613",2013,"1 North West Metro","Hobsons Bay",5446
+"614",2013,"1 North West Metro","Hume",12030
+"615",2013,"1 North West Metro","Maribyrnong",6956
+"616",2013,"1 North West Metro","Melbourne",24624
+"617",2013,"1 North West Metro","Melton",6828
+"618",2013,"1 North West Metro","Moonee Valley",6248
+"619",2013,"1 North West Metro","Moreland",9243
+"620",2013,"1 North West Metro","Nillumbik",1600
+"621",2013,"1 North West Metro","Whittlesea",9986
+"622",2013,"1 North West Metro","Wyndham",9941
+"623",2013,"1 North West Metro","Yarra",9204
+"624",2013,"1 North West Metro","Total",133827
+"625",2013,"2 Eastern","Alpine",363
+"626",2013,"2 Eastern","Bass Coast",1970
+"627",2013,"2 Eastern","Baw Baw",2215
+"628",2013,"2 Eastern","Benalla",854
+"629",2013,"2 Eastern","Boroondara",5965
+"630",2013,"2 Eastern","East Gippsland",3071
+"631",2013,"2 Eastern","Greater Shepparton",5116
+"632",2013,"2 Eastern","Indigo",355
+"633",2013,"2 Eastern","Knox",6923
+"634",2013,"2 Eastern","Latrobe",7618
+"635",2013,"2 Eastern","Manningham",3112
+"636",2013,"2 Eastern","Mansfield",293
+"637",2013,"2 Eastern","Maroondah",5497
+"638",2013,"2 Eastern","Mitchell",1991
+"639",2013,"2 Eastern","Moira",1177
+"640",2013,"2 Eastern","Monash",6825
+"641",2013,"2 Eastern","Murrindindi",535
+"642",2013,"2 Eastern","South Gippsland",895
+"643",2013,"2 Eastern","Strathbogie",373
+"644",2013,"2 Eastern","Towong",213
+"645",2013,"2 Eastern","Wangaratta",1679
+"646",2013,"2 Eastern","Wellington",2798
+"647",2013,"2 Eastern","Whitehorse",5801
+"648",2013,"2 Eastern","Wodonga",2235
+"649",2013,"2 Eastern","Yarra Ranges",5053
+"650",2013,"2 Eastern","Total",72927
+"651",2013,"3 Southern Metro","Bayside",3489
+"652",2013,"3 Southern Metro","Cardinia",4344
+"653",2013,"3 Southern Metro","Casey",12056
+"654",2013,"3 Southern Metro","Frankston",10782
+"655",2013,"3 Southern Metro","Glen Eira",4735
+"656",2013,"3 Southern Metro","Greater Dandenong",12486
+"657",2013,"3 Southern Metro","Kingston",7329
+"658",2013,"3 Southern Metro","Mornington Peninsula",7518
+"659",2013,"3 Southern Metro","Port Phillip",8779
+"660",2013,"3 Southern Metro","Stonnington",7443
+"661",2013,"3 Southern Metro","Total",78961
+"662",2013,"4 Western","Ararat",874
+"663",2013,"4 Western","Ballarat",8108
+"664",2013,"4 Western","Buloke",187
+"665",2013,"4 Western","Campaspe",2100
+"666",2013,"4 Western","Central Goldfields",811
+"667",2013,"4 Western","Colac-Otway",1021
+"668",2013,"4 Western","Corangamite",456
+"669",2013,"4 Western","Gannawarra",413
+"670",2013,"4 Western","Glenelg",1184
+"671",2013,"4 Western","Golden Plains",402
+"672",2013,"4 Western","Greater Bendigo",6053
+"673",2013,"4 Western","Greater Geelong",13553
+"674",2013,"4 Western","Hepburn",524
+"675",2013,"4 Western","Hindmarsh",184
+"676",2013,"4 Western","Horsham",1347
+"677",2013,"4 Western","Loddon",264
+"678",2013,"4 Western","Macedon Ranges",1389
+"679",2013,"4 Western","Mildura",4535
+"680",2013,"4 Western","Moorabool",1502
+"681",2013,"4 Western","Mount Alexander",624
+"682",2013,"4 Western","Moyne",435
+"683",2013,"4 Western","Northern Grampians",683
+"684",2013,"4 Western","Pyrenees",316
+"685",2013,"4 Western","Queenscliffe",73
+"686",2013,"4 Western","Southern Grampians",883
+"687",2013,"4 Western","Surf Coast",983
+"688",2013,"4 Western","Swan Hill",1437
+"689",2013,"4 Western","Warrnambool",1910
+"690",2013,"4 Western","West Wimmera",121
+"691",2013,"4 Western","Yarriambiack",215
+"692",2013,"4 Western","Total",52587
+"693",2013,"Justice Institutions and Immigration Facilities","Justice Institutions and Immigration Facilities",1041
+"694",2013,"Justice Institutions and Immigration Facilities","Total",1041
+"695",2013,"Unincorporated Vic","Unincorporated Vic",66
+"696",2013,"Unincorporated Vic","Total",66
+"697",2012,"1 North West Metro","Banyule",5815
+"698",2012,"1 North West Metro","Brimbank",15481
+"699",2012,"1 North West Metro","Darebin",9672
+"700",2012,"1 North West Metro","Hobsons Bay",5850
+"701",2012,"1 North West Metro","Hume",11988
+"702",2012,"1 North West Metro","Maribyrnong",7475
+"703",2012,"1 North West Metro","Melbourne",24746
+"704",2012,"1 North West Metro","Melton",6926
+"705",2012,"1 North West Metro","Moonee Valley",6962
+"706",2012,"1 North West Metro","Moreland",9813
+"707",2012,"1 North West Metro","Nillumbik",1454
+"708",2012,"1 North West Metro","Whittlesea",9849
+"709",2012,"1 North West Metro","Wyndham",11066
+"710",2012,"1 North West Metro","Yarra",9199
+"711",2012,"1 North West Metro","Total",136296
+"712",2012,"2 Eastern","Alpine",318
+"713",2012,"2 Eastern","Bass Coast",1848
+"714",2012,"2 Eastern","Baw Baw",2133
+"715",2012,"2 Eastern","Benalla",728
+"716",2012,"2 Eastern","Boroondara",5918
+"717",2012,"2 Eastern","East Gippsland",2667
+"718",2012,"2 Eastern","Greater Shepparton",4824
+"719",2012,"2 Eastern","Indigo",383
+"720",2012,"2 Eastern","Knox",6852
+"721",2012,"2 Eastern","Latrobe",7456
+"722",2012,"2 Eastern","Manningham",2924
+"723",2012,"2 Eastern","Mansfield",254
+"724",2012,"2 Eastern","Maroondah",5219
+"725",2012,"2 Eastern","Mitchell",1961
+"726",2012,"2 Eastern","Moira",1058
+"727",2012,"2 Eastern","Monash",6526
+"728",2012,"2 Eastern","Murrindindi",457
+"729",2012,"2 Eastern","South Gippsland",935
+"730",2012,"2 Eastern","Strathbogie",379
+"731",2012,"2 Eastern","Towong",196
+"732",2012,"2 Eastern","Wangaratta",1737
+"733",2012,"2 Eastern","Wellington",2862
+"734",2012,"2 Eastern","Whitehorse",5583
+"735",2012,"2 Eastern","Wodonga",2603
+"736",2012,"2 Eastern","Yarra Ranges",5216
+"737",2012,"2 Eastern","Total",71037
+"738",2012,"3 Southern Metro","Bayside",3504
+"739",2012,"3 Southern Metro","Cardinia",3819
+"740",2012,"3 Southern Metro","Casey",11799
+"741",2012,"3 Southern Metro","Frankston",10538
+"742",2012,"3 Southern Metro","Glen Eira",4619
+"743",2012,"3 Southern Metro","Greater Dandenong",11782
+"744",2012,"3 Southern Metro","Kingston",7481
+"745",2012,"3 Southern Metro","Mornington Peninsula",7355
+"746",2012,"3 Southern Metro","Port Phillip",8837
+"747",2012,"3 Southern Metro","Stonnington",7291
+"748",2012,"3 Southern Metro","Total",77025
+"749",2012,"4 Western","Ararat",934
+"750",2012,"4 Western","Ballarat",8179
+"751",2012,"4 Western","Buloke",236
+"752",2012,"4 Western","Campaspe",2233
+"753",2012,"4 Western","Central Goldfields",771
+"754",2012,"4 Western","Colac-Otway",1183
+"755",2012,"4 Western","Corangamite",543
+"756",2012,"4 Western","Gannawarra",423
+"757",2012,"4 Western","Glenelg",1093
+"758",2012,"4 Western","Golden Plains",376
+"759",2012,"4 Western","Greater Bendigo",5648
+"760",2012,"4 Western","Greater Geelong",13449
+"761",2012,"4 Western","Hepburn",555
+"762",2012,"4 Western","Hindmarsh",199
+"763",2012,"4 Western","Horsham",1416
+"764",2012,"4 Western","Loddon",333
+"765",2012,"4 Western","Macedon Ranges",1319
+"766",2012,"4 Western","Mildura",4595
+"767",2012,"4 Western","Moorabool",1352
+"768",2012,"4 Western","Mount Alexander",634
+"769",2012,"4 Western","Moyne",537
+"770",2012,"4 Western","Northern Grampians",654
+"771",2012,"4 Western","Pyrenees",248
+"772",2012,"4 Western","Queenscliffe",111
+"773",2012,"4 Western","Southern Grampians",800
+"774",2012,"4 Western","Surf Coast",1175
+"775",2012,"4 Western","Swan Hill",1381
+"776",2012,"4 Western","Warrnambool",1827
+"777",2012,"4 Western","West Wimmera",133
+"778",2012,"4 Western","Yarriambiack",274
+"779",2012,"4 Western","Total",52611
+"780",2012,"Justice Institutions and Immigration Facilities","Justice Institutions and Immigration Facilities",832
+"781",2012,"Justice Institutions and Immigration Facilities","Total",832
+"782",2012,"Unincorporated Vic","Unincorporated Vic",110
+"783",2012,"Unincorporated Vic","Total",110
+"784",2011,"1 North West Metro","Banyule",5603
+"785",2011,"1 North West Metro","Brimbank",14296
+"786",2011,"1 North West Metro","Darebin",9583
+"787",2011,"1 North West Metro","Hobsons Bay",4743
+"788",2011,"1 North West Metro","Hume",11012
+"789",2011,"1 North West Metro","Maribyrnong",6981
+"790",2011,"1 North West Metro","Melbourne",23656
+"791",2011,"1 North West Metro","Melton",6065
+"792",2011,"1 North West Metro","Moonee Valley",6029
+"793",2011,"1 North West Metro","Moreland",8895
+"794",2011,"1 North West Metro","Nillumbik",1458
+"795",2011,"1 North West Metro","Whittlesea",8758
+"796",2011,"1 North West Metro","Wyndham",9639
+"797",2011,"1 North West Metro","Yarra",8718
+"798",2011,"1 North West Metro","Total",125436
+"799",2011,"2 Eastern","Alpine",278
+"800",2011,"2 Eastern","Bass Coast",1601
+"801",2011,"2 Eastern","Baw Baw",1732
+"802",2011,"2 Eastern","Benalla",760
+"803",2011,"2 Eastern","Boroondara",5265
+"804",2011,"2 Eastern","East Gippsland",2499
+"805",2011,"2 Eastern","Greater Shepparton",5002
+"806",2011,"2 Eastern","Indigo",370
+"807",2011,"2 Eastern","Knox",5973
+"808",2011,"2 Eastern","Latrobe",6785
+"809",2011,"2 Eastern","Manningham",2804
+"810",2011,"2 Eastern","Mansfield",249
+"811",2011,"2 Eastern","Maroondah",4779
+"812",2011,"2 Eastern","Mitchell",1816
+"813",2011,"2 Eastern","Moira",1176
+"814",2011,"2 Eastern","Monash",6475
+"815",2011,"2 Eastern","Murrindindi",428
+"816",2011,"2 Eastern","South Gippsland",857
+"817",2011,"2 Eastern","Strathbogie",347
+"818",2011,"2 Eastern","Towong",161
+"819",2011,"2 Eastern","Wangaratta",1690
+"820",2011,"2 Eastern","Wellington",2309
+"821",2011,"2 Eastern","Whitehorse",5212
+"822",2011,"2 Eastern","Wodonga",2383
+"823",2011,"2 Eastern","Yarra Ranges",4782
+"824",2011,"2 Eastern","Total",65733
+"825",2011,"3 Southern Metro","Bayside",3004
+"826",2011,"3 Southern Metro","Cardinia",3346
+"827",2011,"3 Southern Metro","Casey",10944
+"828",2011,"3 Southern Metro","Frankston",9245
+"829",2011,"3 Southern Metro","Glen Eira",4402
+"830",2011,"3 Southern Metro","Greater Dandenong",11002
+"831",2011,"3 Southern Metro","Kingston",6709
+"832",2011,"3 Southern Metro","Mornington Peninsula",6987
+"833",2011,"3 Southern Metro","Port Phillip",8254
+"834",2011,"3 Southern Metro","Stonnington",6806
+"835",2011,"3 Southern Metro","Total",70699
+"836",2011,"4 Western","Ararat",802
+"837",2011,"4 Western","Ballarat",8179
+"838",2011,"4 Western","Buloke",221
+"839",2011,"4 Western","Campaspe",1895
+"840",2011,"4 Western","Central Goldfields",677
+"841",2011,"4 Western","Colac-Otway",1090
+"842",2011,"4 Western","Corangamite",522
+"843",2011,"4 Western","Gannawarra",444
+"844",2011,"4 Western","Glenelg",1235
+"845",2011,"4 Western","Golden Plains",296
+"846",2011,"4 Western","Greater Bendigo",5049
+"847",2011,"4 Western","Greater Geelong",12494
+"848",2011,"4 Western","Hepburn",503
+"849",2011,"4 Western","Hindmarsh",172
+"850",2011,"4 Western","Horsham",1231
+"851",2011,"4 Western","Loddon",331
+"852",2011,"4 Western","Macedon Ranges",1167
+"853",2011,"4 Western","Mildura",4478
+"854",2011,"4 Western","Moorabool",1094
+"855",2011,"4 Western","Mount Alexander",726
+"856",2011,"4 Western","Moyne",441
+"857",2011,"4 Western","Northern Grampians",787
+"858",2011,"4 Western","Pyrenees",209
+"859",2011,"4 Western","Queenscliffe",92
+"860",2011,"4 Western","Southern Grampians",859
+"861",2011,"4 Western","Surf Coast",999
+"862",2011,"4 Western","Swan Hill",1333
+"863",2011,"4 Western","Warrnambool",1827
+"864",2011,"4 Western","West Wimmera",100
+"865",2011,"4 Western","Yarriambiack",285
+"866",2011,"4 Western","Total",49538
+"867",2011,"Justice Institutions and Immigration Facilities","Justice Institutions and Immigration Facilities",720
+"868",2011,"Justice Institutions and Immigration Facilities","Total",720
+"869",2011,"Unincorporated Vic","Unincorporated Vic",124
+"870",2011,"Unincorporated Vic","Total",124
